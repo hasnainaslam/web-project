@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="contact-main">
+        <h2 class="center">Contact Us</h2>
+        <div class="box1">
+            <form action="/register" method="POST">
+             <div>
+                 <p>Name:</p>
+                 <input type="text" name="name" placeholder="Enter your name">
+             </div>
+             <div>
+                 <p>Number</p>
+                 <input type="number" name="number" id="" placeholder="Enter your number">
+             </div>
+             <div>
+                 <p>Email</p>
+                 <input type="email" name="email" id="" placeholder="Enter your email">
+             </div>
+             <div>
+                 <p>Password</p>
+                 <input type="password" name="password" id="" placeholder="Enter your password">
+             </div>
+             <div>
+                 <input type="submit" value="Submit" id="sbmit-btn">
+             </div>
+            
+            </form>
+        </div>
+
+    </div>
+    {{>footer}}
+</body>
+</html>
